@@ -1,0 +1,20 @@
+2025-07-17 17:53:05,833 - db_helper - INFO - fetch_expenses_for_date called with 2024-09-30
+2025-07-17 17:53:06,001 - db_helper - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-05
+2025-07-17 18:00:01,064 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-28
+2025-07-17 18:00:17,987 - db_helper - INFO - delete_expenses_for_date called with 2024-08-28
+2025-07-17 18:00:18,233 - db_helper - INFO - insert_expense called with date: 2024-08-28, amount: 500.0, category: Shopping, notes: Weekly rashan
+2025-07-18 18:50:53,089 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-07-18 18:54:17,943 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-01
+2025-07-18 18:56:03,519 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-05
+2025-07-18 18:56:06,773 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-05
+2025-07-18 18:56:51,356 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-28
+2025-07-18 18:58:24,771 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-28
+2025-07-18 18:58:26,881 - db_helper - INFO - delete_expenses_for_date called with 2024-08-28
+2025-07-18 18:58:26,911 - db_helper - INFO - insert_expense called with date: 2024-08-28, amount: 2100.0, category: Rent, notes: Maintainance
+2025-07-18 18:58:27,285 - db_helper - INFO - insert_expense called with date: 2024-08-28, amount: 50.0, category: Food, notes: Bhaji
+2025-07-18 18:58:27,851 - db_helper - INFO - insert_expense called with date: 2024-08-28, amount: 300.0, category: Other, notes: Eye folds
+2025-07-18 18:58:37,662 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-06
+2025-07-18 18:58:42,933 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-28
+2025-07-18 18:58:55,757 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-28
+2025-07-18 18:58:59,411 - db_helper - INFO - fetch_expenses_for_date called with 2024-08-28
+2025-07-18 18:59:01,491 - db_helper - INFO - fetch_expense_summary called with start: 2024-08-01 end: 2024-08-28
