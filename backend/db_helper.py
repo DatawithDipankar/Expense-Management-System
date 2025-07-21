@@ -69,10 +69,24 @@ def delete_expenses_for_date(expense_date):
         cursor.execute("DELETE FROM expenses WHERE DATE(expense_date) = %s", (expense_date,))
         print(f"Deleted {cursor.rowcount} record(s) for date: {expense_date}")
 
+def fetch_expense_summary_by_month(start_date, end_date):
+    with get_db_cursor() as cursor:
+        cursor.execute(
+            '''
+            SELECT DATE_FORMAT(expense_date, '%M') as month,
+                   SUM(amount) as total
+            FROM expenses
+            WHERE expense_date BETWEEN %s AND %s
+            GROUP BY month
+            ORDER BY STR_TO_DATE(month, '%M')
+            ''',
+            (start_date, end_date)
+        )
+        return cursor.fetchall()
+
 
 if __name__ == "__main__":
-    expenses = fetch_expenses_for_date("2024-09-30")
-    print(expenses)
+    fetch_expenses_for_date("2024-09-30")
     # delete_expenses_for_date("2024-08-25")
     summary = fetch_expense_summary("2024-08-01", "2024-08-05")
     for record in summary:

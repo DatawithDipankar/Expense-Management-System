@@ -49,3 +49,11 @@ def get_analytics(date_range: DateRange):
         }
 
     return breakdown
+
+@app.post("/analytics/monthly/")
+def get_monthly_expense_breakdown(date_range: DateRange):
+    data = db_helper.fetch_expense_summary_by_month(date_range.start_date, date_range.end_date)
+    if data is None:
+        raise HTTPException(status_code=500, detail="Failed to retrieve monthly summary.")
+
+    return data

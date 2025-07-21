@@ -2,7 +2,7 @@ import streamlit as st
 from datetime import datetime
 import requests
 import pandas as pd
-
+from utils import dataframe_to_pdf
 
 API_URL = "http://localhost:8000"
 
@@ -41,6 +41,14 @@ def analytics_tab():
 
         st.table(df_sorted)
 
+        pdf_data = dataframe_to_pdf(df_sorted, title="Expense Category Breakdown")
+
+        st.download_button(
+        label="📄 Download Report as PDF",
+            data=pdf_data,
+        file_name="expense_report.pdf",
+        mime="application/pdf"
+        )
 
 
 

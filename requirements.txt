@@ -6,3 +6,5 @@ mysql-connector-python==9.3.0
 pandas==2.2.3
 requests==2.32.3
 pytest==8.4.1
+fpdf==1.7.2
+python-dotenv~=0.21.0
