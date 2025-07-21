@@ -8,7 +8,7 @@ def dataframe_to_pdf(df, title="Expense Report"):
 
     # Title
     pdf.set_font("Arial", style='B', size=14)
-    pdf.multi_cell(200, 10, title, ln=True, align='C')
+    pdf.cell(200, 10, title, ln=True, align='C')
     pdf.ln(10)
 
     # Table header
