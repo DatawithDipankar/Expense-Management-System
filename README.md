@@ -10,26 +10,39 @@ This is a full-stack Expense Management System with a **Streamlit frontend** and
 ## 📁 Project Structure
 
 ```markdown
-expense-management-system/
+project-expense-tracking/
+├── backend/
+│ ├── db_helper.py # MySQL database operations
+│ ├── logging_setup.py # Log configuration
+│ └── server.py # FastAPI server with API routes
 │
-├── backend/             # FastAPI backend and DB helper
-├── frontend/            # Streamlit app & UI logic
-├── utils.py             # PDF generation utility
-├── .env                 # Password (and optionally DB config)
-├── requirements.txt     # Python dependencies
-└── README.md
+├── frontend/
+│ ├── add_update_ui.py # Add/update expense UI
+│ ├── analytics_by_category.py # Analytics by category
+│ ├── analytics_by_month.py # Analytics by month
+│ ├── budget_tracker.py # Monthly budget tracker UI
+│ ├── utils.py # PDF export utility
+│ └── app.py # Main Streamlit entry point
+│
+├── tests/
+│ ├── backend/
+│ │ └── test_db_helper.py # Tests for DB functions
+│ ├── frontend/
+│ └── conftest.py # Test config
+│
+├── README.md
+└── requirements.txt
 ````
 ---
 
 ## 🚀 Features
 
-- ✅ Add, update, delete daily expenses
-- ✅ Category-wise analytics (bar chart + table)
-- ✅ Monthly analytics view
-- ✅ Monthly **budget tracker with progress bar**
-- ✅ Export analytics report as **PDF**
-- ✅ **Password-protected** access (via `.env`)
-- ✅ Clean and modular structure
+- 📅 Add or update expenses by date
+- 📊 Visualize analytics by **Category** or **Month**
+- 🎯 Monthly budget tracker with a dynamic progress bar
+- 🔐 Password-protected app access
+- 📄 Download analytics reports as **PDF**
+- 🧪 Unit tests for database logic
 
 ---
 
@@ -105,13 +118,13 @@ You’ll be prompted to enter this when you open the Streamlit app.
 ### 1. Start FastAPI backend:
 
 ```bash
-uvicorn server.server:app --reload
+backend/ uvicorn server:app --reload
 ```
 
 ### 2. Run Streamlit frontend:
 
 ```bash
-streamlit run frontend/app.py
+frontend/ streamlit run app.py
 ```
 
 ---
@@ -141,12 +154,4 @@ Contributions and suggestions are welcome! Feel free to fork the repo, create a 
 
 For questions or collaboration opportunities, reach out via LinkedIn: [linkedin.com/in/datawithdipankar](https://www.linkedin.com/in/dipankar-mane-b9663b257?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmEmSatCuRf%2BoV6n8VTN%2FLA%3D%3D)
 
-```
-
----
-
-Let me know if:
-- You want to add screenshots or a demo video
-- You want help writing a short LinkedIn post linking to this project
-- You’re considering deploying this on a cloud platform (like Streamlit Cloud or Render)
 ```
