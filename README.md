@@ -139,7 +139,7 @@ Contributions and suggestions are welcome! Feel free to fork the repo, create a 
 
 ## 📬 Contact
 
-For questions or collaboration opportunities, reach out via LinkedIn: [linkedin.com/in/datawithdipankar](https://linkedin.com/in/datawithdipankar)
+For questions or collaboration opportunities, reach out via LinkedIn: [linkedin.com/in/datawithdipankar](https://www.linkedin.com/in/dipankar-mane-b9663b257?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmEmSatCuRf%2BoV6n8VTN%2FLA%3D%3D)
 
 ```
 
